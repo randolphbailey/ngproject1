@@ -1,0 +1,87 @@
+<div class="container">
+  <div class="row">
+    <div class="col">
+      <h1>Expense Reimbursement System</h1>
+    </div>
+  </div>
+  <div class="row">
+    <div class="col text-right p-2">
+      <a href="http://localhost:8085/com.expense/Logout" class="btn btn-danger"
+        >Logout</a
+      >
+    </div>
+  </div>
+  <div class="row">
+    <div class="col">
+      <div class="table-responsive">
+        <table class="table" id="managerExpenseTable">
+          <thead>
+            <tr>
+              <th scope="col">
+                #
+              </th>
+              <th scope="col">
+                Username
+              </th>
+              <th scope="col">Amount</th>
+              <th scope="col">Description</th>
+              <th scope="col">Status</th>
+              <th scope="col">
+                View Details
+              </th>
+              <th scope="col">
+                Approve
+              </th>
+              <th scope="col">Deny</th>
+            </tr>
+          </thead>
+          <tbody id="managerExpenseTableBody">
+            <tr>
+              <th scope="row">1</th>
+              <td>Loading...</td>
+              <td></td>
+              <td></td>
+              <td></td>
+              <td></td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+    </div>
+  </div>
+</div>
+<!-- Reimbursement Details Modal -->
+<div
+  class="modal fade"
+  id="reimbursementDetailsModal"
+  tabindex="-1"
+  role="dialog"
+  aria-labelledby="reimbursementDetailsModalLabel"
+  aria-hidden="true"
+>
+  <div class="modal-dialog" role="document">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5 class="modal-title" id="reimbursementDetailsModalLabel">
+          Reimbursement Detail
+        </h5>
+        <button
+          type="button"
+          class="close"
+          data-dismiss="modal"
+          aria-label="Close"
+        >
+          <span aria-hidden="true">&times;</span>
+        </button>
+      </div>
+      <div class="modal-body" id="reimbursementDetailsModalBody">
+        Loading reimbursement details...
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-secondary" data-dismiss="modal">
+          Close
+        </button>
+      </div>
+    </div>
+  </div>
+</div>
